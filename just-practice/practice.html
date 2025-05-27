@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .company-button {
+            height: 30px;
+            width: 210px;
+            border-radius: 15px;
+            border: none;
+            background-color: rgb(0, 93, 224);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .save-button {
+            height: 30px;
+            color: rgb(0, 93, 224);
+            background-color: white;
+            border-color: rgb(0, 93, 224);
+            border-radius: 15px;
+            width: 60px;
+            border-style: solid;
+            border-width: 1px;
+            cursor: pointer;
+            transition: background-color 0.3s,
+                        border-width 0.1s, 
+                        font-weight 0.3s;
+        }
+
+        .save-button:hover {
+            background-color: rgb(203, 232, 255);
+            border-width: 2px;
+            font-weight: bold;
+        }
+
+        .company-button:hover {
+            background-color: rgb(0, 47, 255);
+        }
+    </style>
+</head>
+<body>
+    <button class="company-button">
+        Apply on company website
+    </button>
+    <button class="save-button">
+        Save
+    </button>
+</body>
+</html>
