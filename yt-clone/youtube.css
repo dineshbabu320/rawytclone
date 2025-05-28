@@ -63,9 +63,10 @@ body {
 }
 
 .video-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     column-gap: 15px;
+    justify-content: space-between;
 }
 
 .header {
@@ -131,6 +132,7 @@ body {
     border-color: lightgray;
     margin-right: 15px;
     margin-left: -1px;
+    cursor: pointer;
 }
 
 .search-image, .mic-image {
@@ -192,4 +194,22 @@ body {
     height: 17px;
     color: white;
     text-align: center;
+}
+
+.s-link {
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    padding-top: 13px;
+    cursor: pointer;
+}
+
+.s-link:hover {
+    background-color: lightgray;
+}
+
+.link-image {
+    height: 40px;
 }
