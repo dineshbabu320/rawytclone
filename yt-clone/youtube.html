@@ -4,83 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube</title>
-    <style>
-        .thumbnail {
-              width: 300px;
-              margin-top: 10px;
-        }
-
-        .search-box {
-            height: 30px;
-            width: 150px;
-            font-size: 20px;
-            display: block;
-        }
-
-        .video-preview {
-            width: 300px;
-            display: inline-block;
-            margin-right: 15px;
-        }
-
-        .profile-pic {
-            display: inline-block;
-            width: 50px;
-            object-fit: cover;
-            vertical-align: top;
-            margin-top: 15px;
-            margin-right: 10px;
-        }
-
-        .profile-icon {
-            width: 100%;
-            border-radius: 50px;
-        }
-
-        .info {
-            display: inline-block;
-            width: 200px;
-        }
-
-        .author {
-            margin-bottom: 0px;
-        }
-
-        .views {
-            margin-top: 1px;
-        }
-    </style>
+    <link rel="stylesheet" href="youtube.css">
 </head>
 <body>
-    <input class="search-box" type="text" placeholder="Search">
-    <div class="video-preview">
-        <div>
-            <img class="thumbnail" src="placeholder.webp">
+    <div class="header">
+        <div class="left-section">
+            <img class="menu" src="https://supersimple.dev/exercises/youtube/icons/hamburger-menu.svg" alt="">
+            <img class="yt-logo" src="https://supersimple.dev/exercises/youtube/icons/youtube-logo.svg" alt="">
         </div>
-        <div>
-            <div class="profile-pic">
-                <img class="profile-icon" src="https://imgs.search.brave.com/_lcv-YTnEl_ldZSoKKW6hu5xebVh-sDYm3UgTard0as/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNm5WV3pF/NlRxNjI2ZGNfYWdC/c1FJeWJqMFBhMWFV/VWxXbkpFWDVaR0ts/VS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkw/TXk1bS9kR05rYmk1/dVpYUXZhbkJuL0x6/QTRMekExTHpJNEx6/SXkvTHpNMk1GOUdY/emd3TlRJNC9Nakkw/T0Y5TVNGVjRkemQw/L01uQnVVVGQ0T0d4/R1JYTlQvTWtsYVow/czRTVWRHV0dWUS9V/eTVxY0dj" alt="Profile">
+        <div class="middle-section">
+            <input class="search-box" type="text" placeholder="Search">
+            <button class="search-icon">
+                <img class="search-image" src="https://supersimple.dev/exercises/youtube/icons/search.svg" alt="">
+            </button>
+            <button class="mic-icon">
+                <img class="mic-image" src="https://supersimple.dev/exercises/youtube/icons/voice-search-icon.svg" alt="">
+            </button>
+        </div>
+        <div class="right-section">
+            <img src="https://supersimple.dev/exercises/youtube/icons/upload.svg" alt="">
+            <img src="https://supersimple.dev/exercises/youtube/icons/youtube-apps.svg" alt="">
+            <div class="notif-container">
+                <img src="https://supersimple.dev/exercises/youtube/icons/notifications.svg" alt="">
+                <div class="notif-icon">5</div>
             </div>
-            <div class="info">    
-                <p class="video-title"><strong>Watch this interesting video</strong></p>
-                <p class="author">Mr. Beast</p>
-                <p class="views">3.5M views &#183; 1 month ago</p>
-            </div> 
+            <img class="prof" src="https://imgs.search.brave.com/_lcv-YTnEl_ldZSoKKW6hu5xebVh-sDYm3UgTard0as/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNm5WV3pF/NlRxNjI2ZGNfYWdC/c1FJeWJqMFBhMWFV/VWxXbkpFWDVaR0ts/VS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkw/TXk1bS9kR05rYmk1/dVpYUXZhbkJuL0x6/QTRMekExTHpJNEx6/SXkvTHpNMk1GOUdY/emd3TlRJNC9Nakkw/T0Y5TVNGVjRkemQw/L01uQnVVVGQ0T0d4/R1JYTlQvTWtsYVow/czRTVWRHV0dWUS9V/eTVxY0dj" alt="">
         </div>
     </div>
-    <div class="video-preview">
-        <div>
-            <img class="thumbnail" src="placeholder.webp">
-        </div>
-        <div>
-            <div class="profile-pic">
-                <img class="profile-icon" src="https://imgs.search.brave.com/_lcv-YTnEl_ldZSoKKW6hu5xebVh-sDYm3UgTard0as/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNm5WV3pF/NlRxNjI2ZGNfYWdC/c1FJeWJqMFBhMWFV/VWxXbkpFWDVaR0ts/VS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkw/TXk1bS9kR05rYmk1/dVpYUXZhbkJuL0x6/QTRMekExTHpJNEx6/SXkvTHpNMk1GOUdY/emd3TlRJNC9Nakkw/T0Y5TVNGVjRkemQw/L01uQnVVVGQ0T0d4/R1JYTlQvTWtsYVow/czRTVWRHV0dWUS9V/eTVxY0dj" alt="Profile">
+    
+    <div class="sidebar">
+        sidebar
+    </div>
+
+    <div class="video-container">
+        <div class="video-preview">
+            <div class="thumbnail-wrapper">
+                <img class="thumbnail" src="placeholder.webp">
+                <div class="timer">15:00</div>
             </div>
-            <div class="info">    
-                <p class="video-title"><strong>Watch this interesting video</strong></p>
-                <p class="author">Mr. Beast</p>
-                <p class="views">3.5M views &#183; 1 month ago</p>
-            </div> 
+            <div class="info-card">
+                <div class="profile-pic">
+                    <img class="profile-icon" src="https://imgs.search.brave.com/_lcv-YTnEl_ldZSoKKW6hu5xebVh-sDYm3UgTard0as/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNm5WV3pF/NlRxNjI2ZGNfYWdC/c1FJeWJqMFBhMWFV/VWxXbkpFWDVaR0ts/VS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkw/TXk1bS9kR05rYmk1/dVpYUXZhbkJuL0x6/QTRMekExTHpJNEx6/SXkvTHpNMk1GOUdY/emd3TlRJNC9Nakkw/T0Y5TVNGVjRkemQw/L01uQnVVVGQ0T0d4/R1JYTlQvTWtsYVow/czRTVWRHV0dWUS9V/eTVxY0dj" alt="Profile">
+                </div>
+                <div class="info">    
+                    <p class="video-title"><strong>Watch this interesting video</strong></p>
+                    <p class="author">Mr. Beast</p>
+                    <p class="views">3.5M views &#183; 1 month ago</p>
+                </div> 
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-wrapper">
+                <img class="thumbnail" src="placeholder.webp">
+                <div class="timer">15:00</div>
+            </div>
+            <div class="info-card">
+                <div class="profile-pic">
+                    <img class="profile-icon" src="https://imgs.search.brave.com/_lcv-YTnEl_ldZSoKKW6hu5xebVh-sDYm3UgTard0as/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNm5WV3pF/NlRxNjI2ZGNfYWdC/c1FJeWJqMFBhMWFV/VWxXbkpFWDVaR0ts/VS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkw/TXk1bS9kR05rYmk1/dVpYUXZhbkJuL0x6/QTRMekExTHpJNEx6/SXkvTHpNMk1GOUdY/emd3TlRJNC9Nakkw/T0Y5TVNGVjRkemQw/L01uQnVVVGQ0T0d4/R1JYTlQvTWtsYVow/czRTVWRHV0dWUS9V/eTVxY0dj" alt="Profile">
+                </div>
+                <div class="info">    
+                    <p class="video-title"><strong>Watch this interesting video</strong></p>
+                    <p class="author">Mr. Beast</p>
+                    <p class="views">3.5M views &#183; 1 month ago</p>
+                </div> 
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-wrapper">
+                <img class="thumbnail" src="placeholder.webp">
+                <div class="timer">15:00</div>
+            </div>
+            <div class="info-card">
+                <div class="profile-pic">
+                    <img class="profile-icon" src="https://imgs.search.brave.com/_lcv-YTnEl_ldZSoKKW6hu5xebVh-sDYm3UgTard0as/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNm5WV3pF/NlRxNjI2ZGNfYWdC/c1FJeWJqMFBhMWFV/VWxXbkpFWDVaR0ts/VS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkw/TXk1bS9kR05rYmk1/dVpYUXZhbkJuL0x6/QTRMekExTHpJNEx6/SXkvTHpNMk1GOUdY/emd3TlRJNC9Nakkw/T0Y5TVNGVjRkemQw/L01uQnVVVGQ0T0d4/R1JYTlQvTWtsYVow/czRTVWRHV0dWUS9V/eTVxY0dj" alt="Profile">
+                </div>
+                <div class="info">    
+                    <p class="video-title"><strong>Watch this interesting video</strong></p>
+                    <p class="author">Mr. Beast</p>
+                    <p class="views">3.5M views &#183; 1 month ago</p>
+                </div> 
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-wrapper">
+                <img class="thumbnail" src="placeholder.webp">
+                <div class="timer">15:00</div>
+            </div>
+            <div class="info-card">
+                <div class="profile-pic">
+                    <img class="profile-icon" src="https://imgs.search.brave.com/_lcv-YTnEl_ldZSoKKW6hu5xebVh-sDYm3UgTard0as/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNm5WV3pF/NlRxNjI2ZGNfYWdC/c1FJeWJqMFBhMWFV/VWxXbkpFWDVaR0ts/VS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkw/TXk1bS9kR05rYmk1/dVpYUXZhbkJuL0x6/QTRMekExTHpJNEx6/SXkvTHpNMk1GOUdY/emd3TlRJNC9Nakkw/T0Y5TVNGVjRkemQw/L01uQnVVVGQ0T0d4/R1JYTlQvTWtsYVow/czRTVWRHV0dWUS9V/eTVxY0dj" alt="Profile">
+                </div>
+                <div class="info">    
+                    <p class="video-title"><strong>Watch this interesting video</strong></p>
+                    <p class="author">Mr. Beast</p>
+                    <p class="views">3.5M views &#183; 1 month ago</p>
+                </div> 
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-wrapper">
+                <img class="thumbnail" src="placeholder.webp">
+                <div class="timer">15:00</div>
+            </div>
+            <div class="info-card">
+                <div class="profile-pic">
+                    <img class="profile-icon" src="https://imgs.search.brave.com/_lcv-YTnEl_ldZSoKKW6hu5xebVh-sDYm3UgTard0as/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNm5WV3pF/NlRxNjI2ZGNfYWdC/c1FJeWJqMFBhMWFV/VWxXbkpFWDVaR0ts/VS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkw/TXk1bS9kR05rYmk1/dVpYUXZhbkJuL0x6/QTRMekExTHpJNEx6/SXkvTHpNMk1GOUdY/emd3TlRJNC9Nakkw/T0Y5TVNGVjRkemQw/L01uQnVVVGQ0T0d4/R1JYTlQvTWtsYVow/czRTVWRHV0dWUS9V/eTVxY0dj" alt="Profile">
+                </div>
+                <div class="info">    
+                    <p class="video-title"><strong>Watch this interesting video</strong></p>
+                    <p class="author">Mr. Beast</p>
+                    <p class="views">3.5M views &#183; 1 month ago</p>
+                </div> 
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-wrapper">
+                <img class="thumbnail" src="placeholder.webp">
+                <div class="timer">15:00</div>
+            </div>
+            <div class="info-card">
+                <div class="profile-pic">
+                    <img class="profile-icon" src="https://imgs.search.brave.com/_lcv-YTnEl_ldZSoKKW6hu5xebVh-sDYm3UgTard0as/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNm5WV3pF/NlRxNjI2ZGNfYWdC/c1FJeWJqMFBhMWFV/VWxXbkpFWDVaR0ts/VS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkw/TXk1bS9kR05rYmk1/dVpYUXZhbkJuL0x6/QTRMekExTHpJNEx6/SXkvTHpNMk1GOUdY/emd3TlRJNC9Nakkw/T0Y5TVNGVjRkemQw/L01uQnVVVGQ0T0d4/R1JYTlQvTWtsYVow/czRTVWRHV0dWUS9V/eTVxY0dj" alt="Profile">
+                </div>
+                <div class="info">    
+                    <p class="video-title"><strong>Watch this interesting video</strong></p>
+                    <p class="author">Mr. Beast</p>
+                    <p class="views">3.5M views &#183; 1 month ago</p>
+                </div> 
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-wrapper">
+                <img class="thumbnail" src="placeholder.webp">
+                <div class="timer">15:00</div>
+            </div>
+            <div class="info-card">
+                <div class="profile-pic">
+                    <img class="profile-icon" src="https://imgs.search.brave.com/_lcv-YTnEl_ldZSoKKW6hu5xebVh-sDYm3UgTard0as/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNm5WV3pF/NlRxNjI2ZGNfYWdC/c1FJeWJqMFBhMWFV/VWxXbkpFWDVaR0ts/VS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkw/TXk1bS9kR05rYmk1/dVpYUXZhbkJuL0x6/QTRMekExTHpJNEx6/SXkvTHpNMk1GOUdY/emd3TlRJNC9Nakkw/T0Y5TVNGVjRkemQw/L01uQnVVVGQ0T0d4/R1JYTlQvTWtsYVow/czRTVWRHV0dWUS9V/eTVxY0dj" alt="Profile">
+                </div>
+                <div class="info">    
+                    <p class="video-title"><strong>Watch this interesting video</strong></p>
+                    <p class="author">Mr. Beast</p>
+                    <p class="views">3.5M views &#183; 1 month ago</p>
+                </div> 
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-wrapper">
+                <img class="thumbnail" src="placeholder.webp">
+                <div class="timer">15:00</div>
+            </div>
+            <div class="info-card">
+                <div class="profile-pic">
+                    <img class="profile-icon" src="https://imgs.search.brave.com/_lcv-YTnEl_ldZSoKKW6hu5xebVh-sDYm3UgTard0as/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNm5WV3pF/NlRxNjI2ZGNfYWdC/c1FJeWJqMFBhMWFV/VWxXbkpFWDVaR0ts/VS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkw/TXk1bS9kR05rYmk1/dVpYUXZhbkJuL0x6/QTRMekExTHpJNEx6/SXkvTHpNMk1GOUdY/emd3TlRJNC9Nakkw/T0Y5TVNGVjRkemQw/L01uQnVVVGQ0T0d4/R1JYTlQvTWtsYVow/czRTVWRHV0dWUS9V/eTVxY0dj" alt="Profile">
+                </div>
+                <div class="info">    
+                    <p class="video-title"><strong>Watch this interesting video</strong></p>
+                    <p class="author">Mr. Beast</p>
+                    <p class="views">3.5M views &#183; 1 month ago</p>
+                </div> 
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-wrapper">
+                <img class="thumbnail" src="placeholder.webp">
+                <div class="timer">15:00</div>
+            </div>
+            <div class="info-card">
+                <div class="profile-pic">
+                    <img class="profile-icon" src="https://imgs.search.brave.com/_lcv-YTnEl_ldZSoKKW6hu5xebVh-sDYm3UgTard0as/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNm5WV3pF/NlRxNjI2ZGNfYWdC/c1FJeWJqMFBhMWFV/VWxXbkpFWDVaR0ts/VS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkw/TXk1bS9kR05rYmk1/dVpYUXZhbkJuL0x6/QTRMekExTHpJNEx6/SXkvTHpNMk1GOUdY/emd3TlRJNC9Nakkw/T0Y5TVNGVjRkemQw/L01uQnVVVGQ0T0d4/R1JYTlQvTWtsYVow/czRTVWRHV0dWUS9V/eTVxY0dj" alt="Profile">
+                </div>
+                <div class="info">    
+                    <p class="video-title"><strong>Watch this interesting video</strong></p>
+                    <p class="author">Mr. Beast</p>
+                    <p class="views">3.5M views &#183; 1 month ago</p>
+                </div> 
+            </div>
         </div>
     </div>
 </body>
